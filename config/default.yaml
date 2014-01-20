@@ -8,8 +8,8 @@ serverName: BoundStar
 # Tip: The > operator lets you write multiline configuration without
 #   worrying about quotes.
 serverDescription: >
-  <strong>Welcome!</strong><br/>
-  This is BoundStar, a StarBound Server!
+  <strong>Welcome to the server monitor panel!</strong><br/>
+  This is BoundStar</a>, a StarBound Server!
 
 # empty serverDescription example:
 #serverDescription:
@@ -38,7 +38,7 @@ starbound:
 features:
   # WARNING: starbound server bug can cause crashes after enough time on linux
   # Recommend you leave this off unless you understand managing ulimit
-  serverStatus: true
+  serverStatus: false
   activeSystems: true
   apiFooter: true
 
