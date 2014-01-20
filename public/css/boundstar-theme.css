@@ -1,0 +1,50 @@
+body {
+	background: black;
+	font-family: '04b03';
+	font-weight: 400;
+	font-size: 14px;
+	color: #fdfdfd;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: '04b03';
+}
+h1 {
+	text-indent: -9999px;
+	background: url(http://boundstar.com/assets/img/logo.png);
+	height: 100px;
+	width: 340px;
+	background-size: 100%;
+}
+.panel-primary,
+.list-group-item,
+.panel-primary>.panel-heading {
+	border-color: white;
+}
+.panel-primary>.panel-body {
+	border-color: white;
+	background: rgba(27,27,27,0.7);
+}
+.panel {
+	background-color: rgba(27,27,27,0.7);
+}
+table {
+	background: none;
+}
+.list-group-item {
+	background: none; 
+}
+.table-bordered {
+	border: 1px solid white;
+}
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+	border: 1px solid white;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	border-top: 1px solid white;
+}
+.panel-title {
+	margin-top: 4px;
+	margin-bottom: 0;
+	font-size: 18px;
+}
