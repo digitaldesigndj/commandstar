@@ -1,5 +1,12 @@
 body {
 	background: black;
+	font-family: '04b03';
+	font-weight: 400;
+	font-size: 14px;
+	color: #fdfdfd;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: '04b03';
 }
 h1 {
 	text-indent: -9999px;
@@ -35,4 +42,13 @@ table {
 }
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
 	border-top: 1px solid white;
+<<<<<<< HEAD
 }
+=======
+}
+.panel-title {
+	margin-top: 4px;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+>>>>>>> dc244e1fca6237e7c36008848be7a178994831bc

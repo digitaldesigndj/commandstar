@@ -1,6 +1,6 @@
 # Name of the server, displayed as the header of the page
 # If this is empty, it won't display the header at the top of the page at all
-serverName: CommandStar!
+serverName: BoundStar
 
 # Description of your server.
 # HTML tags are supported.
@@ -8,19 +8,19 @@ serverName: CommandStar!
 # Tip: The > operator lets you write multiline configuration without
 #   worrying about quotes.
 serverDescription: >
-  <strong>Welcome!</strong><br/>
-  Enter information about your server here!
+  <strong>Welcome to the server monitor panel!</strong><br/>
+  This is BoundStar</a>, a StarBound Server!
 
 # empty serverDescription example:
 #serverDescription:
 
 # --- Server Paths and Files ---
 starbound:
-  binPath: /opt/starbound/bin
-  assetsPath: /opt/starbound/assets
-  dataPath: /opt/starbound/bin/universe
-  logFile: /opt/starbound/bin/starbound_server.log
-  configFile: /opt/starbound/bin/starbound.config
+  binPath: /root/Starbound/linux64
+  assetsPath: /root/Starbound/assets
+  dataPath: /root/Starbound/linux64/universe
+  logFile: /root/Starbound/linux64/starbound_server.log
+  configFile: /root/Starbound/linux64/starbound.config
 
 # --- Windows paths ---
 # Use something like this for Windows instead of the above lines
@@ -49,7 +49,7 @@ ignoreChatPrefixes: "/#"
 # --- Web Server Port ---
 # If you use port 80, you'll need to run runServer.sh as sudo.
 # This isn't super secure right now so be warned.
-listenPort: 8080
+listenPort: 88
 
 # Number of chat messages to keep in memory
 maxRecentChatMessages: 100
@@ -63,7 +63,7 @@ serverStatus:
   # descriptors. This can crash the server after enough time.
   # You can increase the file limit of your starbound server with ulimit to
   # extend the time to crash.
-  checkFrequency: 300
+  checkFrequency: 1000
 
 # --- Custom CSS ---
 # list of additional CSS files to load
@@ -71,7 +71,7 @@ serverStatus:
 # They are loaded dynamically after the DOM has loaded so things might flash.
 # Additional files must have the - before them, this is a YAML array
 customCss:
-  - bootstrap-theme.min.css
+  - boundstar-theme.css
 
 # Multiple CSS files should follow this format:
 #customCss:
@@ -111,3 +111,4 @@ hipchat:
 
 datastore:
   dataPath: ./data
+
