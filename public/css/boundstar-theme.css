@@ -42,13 +42,10 @@ table {
 }
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
 	border-top: 1px solid white;
-<<<<<<< HEAD
 }
-=======
-}
+
 .panel-title {
 	margin-top: 4px;
 	margin-bottom: 0;
 	font-size: 18px;
 }
->>>>>>> dc244e1fca6237e7c36008848be7a178994831bc
