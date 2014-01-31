@@ -1,6 +1,6 @@
 # Name of the server, displayed as the header of the page
 # If this is empty, it won't display the header at the top of the page at all
-serverName: BoundStar
+serverName: boundStar.com
 
 # Description of your server.
 # HTML tags are supported.
@@ -16,22 +16,11 @@ serverDescription: >
 
 # --- Server Paths and Files ---
 starbound:
-  binPath: /root/Starbound/linux64
-  assetsPath: /root/Starbound/assets
-  dataPath: /root/Starbound/linux64/universe
-  logFile: /root/Starbound/linux64/starbound_server.log
-  configFile: /root/Starbound/linux64/starbound.config
-
-# --- Windows paths ---
-# Use something like this for Windows instead of the above lines
-#
-#starbound:
-#  binPath: C:\Games\Steam\SteamApps\common\Starbound\win32
-#  assetsPath: C:\Games\Steam\SteamApps\common\Starbound\assets
-#  dataPath: C:\Games\Steam\SteamApps\common\Starbound\universe
-#  logFile: C:\Games\Steam\SteamApps\common\Starbound\starbound_server.log
-#  configFile: C:\Games\Steam\SteamApps\common\Starbound\starbound.config
-
+  binPath: /root/starbound/linux64
+  assetsPath: /root/starbound/assets
+  dataPath: /root/starbound/universe
+  logFile: /root/starbound/starbound_server.log
+  configFile: /root/starbound/starbound.config
 
 # --- Features ---
 # Toggle various features on and off
@@ -71,7 +60,7 @@ serverStatus:
 # They are loaded dynamically after the DOM has loaded so things might flash.
 # Additional files must have the - before them, this is a YAML array
 customCss:
-  - boundstar-theme.css
+
 
 # Multiple CSS files should follow this format:
 #customCss:
