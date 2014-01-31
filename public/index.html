@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
 
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/commandstar.css" rel="stylesheet">
-    <link href="/css/boundstar-theme.css" rel="stylesheet">
-    <link href="/css/starbound-font/starbound-font.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/commandstar.css" rel="stylesheet">
+    <link href="css/boundstar-theme.css" rel="stylesheet">
+    <link href="css/starbound-font/starbound-font.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -130,8 +130,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
     <script>
       var userNotes = {
       };
@@ -317,7 +317,7 @@
         $('#worldsExplored').text( worldsExplored );
       };
 
-      var apiBase = '';
+      var apiBase = 'http://boundstar.com:88/';
       var socket = io.connect(apiBase);
       socket.on('chat',function(data){
         addChatRow( data.who, data.what, data.when );
@@ -338,7 +338,7 @@
       });
       $(document).ready(function(){
         // load server status
-        $.get( apiBase + "/server/status", function( data ) {
+        $.get( apiBase + "server/status", function( data ) {
           setServerDescription( data.serverDesc );
           setPlayersOnline( data.playersOnline );
           setServerVersion( data.version );
@@ -360,7 +360,7 @@
         });
 
         // load chat
-        $.get( apiBase + "/server/chat", function( data ) {
+        $.get( apiBase + "server/chat", function( data ) {
           numToShow = 50
           msgs = data.length;
           if( msgs < numToShow ) {
